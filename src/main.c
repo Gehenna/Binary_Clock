@@ -17,7 +17,7 @@ Window *window;
 Layer *display_layer;
 
 
-#define CIRCLE_RADIUS 12
+#define CIRCLE_RADIUS 14
 #define CIRCLE_LINE_THICKNESS 2
 
 void draw_cell(GContext* ctx, GPoint center, bool filled) {
@@ -38,7 +38,7 @@ void draw_cell(GContext* ctx, GPoint center, bool filled) {
 }
 
 
-#define CIRCLE_PADDING 14 - CIRCLE_RADIUS // Number of padding pixels on each side
+#define CIRCLE_PADDING 16 - CIRCLE_RADIUS // Number of padding pixels on each side
 #define CELL_SIZE (2 * (CIRCLE_RADIUS + CIRCLE_PADDING)) // One "cell" is the square that contains the circle.
 #define SIDE_PADDING (144 - (4 * CELL_SIZE))/2
 
@@ -48,7 +48,7 @@ void draw_cell(GContext* ctx, GPoint center, bool filled) {
 
 GPoint get_center_point_from_cell_location(unsigned short x, unsigned short y) {
   // Cell location (0,0) is upper left, location (4, 6) is lower right.
-  return GPoint(-14 + (CELL_SIZE/2) + (CELL_SIZE * x), 28 + (CELL_SIZE/2) + (CELL_SIZE * y));
+  return GPoint(-24 + (CELL_SIZE/2) + (CELL_SIZE * x), 14 + (CELL_SIZE/2) + (CELL_SIZE * y));
 }
 
 void draw_cell_row_for_digit(GContext* ctx, unsigned short digit, unsigned short max_columns_to_display, unsigned short cell_row) {
