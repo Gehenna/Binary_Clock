@@ -3,17 +3,17 @@
     "capabilities": [
         ""
     ],
-    "companyName": "stefanrolink@gmail.com",
-    "longName": "Binary_Clock",
+    "companyName": "Stefan",
+    "longName": "Binary Clock",
     "projectType": "native",
     "resources": {
         "media": []
     },
-    "shortName": "Binary_Clock",
+    "shortName": "Binary Clock",
     "uuid": "33b1073d-436d-49d2-acdb-f85d95e8f4ba",
     "versionCode": 1,
     "versionLabel": "1.0",
     "watchapp": {
-        "watchface": false
+        "watchface": true
     }
 }
