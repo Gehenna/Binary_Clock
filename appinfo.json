@@ -7,7 +7,13 @@
     "longName": "Binary Clock",
     "projectType": "native",
     "resources": {
-        "media": []
+        "media": [
+            {
+                "file": "images/Binary_Clock.png",
+                "name": "Binary_Clock_Screenshot",
+                "type": "png"
+            }
+        ]
     },
     "shortName": "Binary Clock",
     "uuid": "33b1073d-436d-49d2-acdb-f85d95e8f4ba",
