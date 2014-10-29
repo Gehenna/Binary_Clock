@@ -48,7 +48,7 @@ void draw_cell(GContext* ctx, GPoint center, bool filled) {
 
 GPoint get_center_point_from_cell_location(unsigned short x, unsigned short y) {
   // Cell location (0,0) is upper left, location (4, 6) is lower right.
-  return GPoint(-24 + (CELL_SIZE/2) + (CELL_SIZE * x), 14 + (CELL_SIZE/2) + (CELL_SIZE * y));
+  return GPoint(-24 + (CELL_SIZE/2) + (CELL_SIZE * x), 18 + (CELL_SIZE/2) + (CELL_SIZE * y));
 }
 
 void draw_cell_row_for_digit(GContext* ctx, unsigned short digit, unsigned short max_columns_to_display, unsigned short cell_row) {
